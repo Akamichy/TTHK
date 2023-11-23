@@ -155,7 +155,7 @@ for i in range(10000000):
         break
 print(f'On vaja {count} bussid. ')
 
-count1 = 0 
-count1 = inim // bus
-print(count1)
+#count1 = 0 
+#count1 = inim // bus
+#print(count1)
 
