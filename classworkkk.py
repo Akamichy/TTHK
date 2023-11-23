@@ -108,16 +108,3 @@
 
  #4
 
-
-b = 4
-a = 4
-a = 2*a+3*b
-b=a/2*b
-print(b)
-
-a = 6
-b = 4
-a = 2*a+3*b
-b = a/2*b
-
-print(a)
