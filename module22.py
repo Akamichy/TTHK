@@ -76,3 +76,9 @@ arv = km / li
 print(f'Keskmine kutusekulu 100km kohta on {arv}')
 
 """ulesanne 7"""
+k = 29.9
+kpm = k / 60
+mins = int(input("Kui kaua soidab (minutiga)"))
+kaugele = kpm * mins
+print(f'Soidab umbes {kaugele} kilomeetrit.')
+
