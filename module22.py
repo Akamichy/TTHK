@@ -83,3 +83,8 @@ mins = int(input("Kui kaua soidab (minutiga)"))
 kaugele = kpm * mins
 print(f'Soidab umbes {kaugele} kilomeetrit.')
 
+"""ulesanne 8"""
+mins = int(input("Mitu minutit?"))
+hours = mins // 60
+mins2 = mins % 60
+print(f'{hours}:{mins2}')
