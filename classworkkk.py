@@ -11,16 +11,11 @@ if grupp == "TARgv23":
     else:
          print("Toetus ei maaratakse.")
 else:
-     print("Ruhma nimetus ei sobi.")
-  
-  
-  
-  
-  
-  
-  #kalkulaator
+     print("Ruhma nimetus ei sobi.") 
+
+#kalkulaator
 try:
-    a = float(input("Esimene arv: "))
+    a = float(input("Esimene arv: "))   
     b = float(input("Teine arv: "))
     try:
         t = input("Tehe: ")
