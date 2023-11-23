@@ -1,33 +1,55 @@
+  #toetus
+grupp = input("ruhma nimetus: ")
+if grupp == "TARgv23":
+    puudumised = int(input("Mitu puudumist sul on?: "))
+    if puudumised < 15:
+        hinne = float(input("Mis on keskmine hinne?: "))
+        if hinne > 3.8:
+             print("Toetus!")
+        else:
+             print("Liiga madal keskmine hind. Toetust ei ole.")
+    else:
+         print("Toetus ei maaratakse.")
+else:
+     print("Ruhma nimetus ei sobi.")
+  
+  
+  
+  
+  
+  
   #kalkulaator
 try:
-    a=float(input("Esimene arv:"))
+    a = float(input("Esimene arv: "))
+    b = float(input("Teine arv: "))
     try:
-        print("Vale andmetuup")
-        t=input("Tehe:")
-        if t in ['+','-','/','*','**','//']:
-            if t=='+':
-                v=a+b
-            elif t=='-':
-                v=a-b
-            elif t=='*':
-                v=a*b
-            elif t=='**':
-                v=a**b
-            elif t=='/':
-                if b==0:
-                    v="DIV/8"
+        t = input("Tehe: ")
+        if t in ['+', '-', '/', '*', '**', '//']:
+            if t == '+':
+                v = a + b
+            elif t == '-':
+                v = a - b
+            elif t == '*':
+                v = a * b
+            elif t == '**':
+                v = a ** b
+            elif t == '/':
+                if b == 0:
+                    v = "DIV/0"  
                 else:
-                    v=a/b
-            print("{0}{1}{2}={3}".format(a,t,b,v))
+                    v = a / b
+            elif t == '//':
+                v = a // b
+            print("{0} {1} {2} = {3}".format(a, t, b, v))
         else:
             print("Tundmatu mark")
     except:
-        print("vale b")
+        print("Vale tehte sisend")
+except ValueError:
+    print("Vale arv sisend")
+except ZeroDivisionError:
+    print("Nulliga jagamine")
 
-    pass
-else:
-    print("Tundmatu mark")
- 
  
  
  #kolmnurk
@@ -41,6 +63,3 @@ if a>0 and b>0 and c>0:
         print("Nurgad")
 else:
     print("Andmed on vale")
-
-
-
