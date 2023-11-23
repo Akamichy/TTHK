@@ -47,8 +47,9 @@ elif planet == 3:
     count1 = (math.pi * 2 * planetr) / (muntr/100000)
 print(count1)
 
-"""ulesanne 3"""
+"""ulesanne 3
 print("kill-koll kill-koll killadi-koll kill-koll kill-koll killadi-koll kill-koll kill-koll killkoll kill-koll")
+"""
 
 """ulesanne 4"""
 print("Rong see soitis tsuhh tsuhh tsuhh,")
