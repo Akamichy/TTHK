@@ -58,7 +58,7 @@ try:
         print(f'{nimi}! Sinu keha indeks on: {round(indeks, 1)}')
         if indeks < 16:
             print("Tervisele ohtlik alakaal")
-        elif indeks >=16 and indeks <=19:
+        elif indeks >= 16 and indeks <= 19:
             print("Alakaal")
         elif indeks > 19 and indeks <= 25:
             print("Normaalkaal")
