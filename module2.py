@@ -23,32 +23,45 @@
 
 
 
-#6.    С клавиатуры вводятся N чисел.
+##6.    С клавиатуры вводятся N чисел.
 
-#Составьте программу, которая определяет количество отрицательных,
+##Составьте программу, которая определяет количество отрицательных,
 
-# количество положительных и количество нулей среди введенных чисел.  
+## количество положительных и количество нулей среди введенных чисел.  
 
-#Значение N вводится с клавиатуры.
+##Значение N вводится с клавиатуры.
 
-n = int(input("Sisestage numbride arv: "))
+#n = int(input("Sisestage numbride arv: "))
 
-null = 0 
-pos = 0
-neg = 0
+#null = 0 
+#pos = 0
+#neg = 0
 
-for i in range(n):
-    n1 = int(input("Sisestage number: "))
-    if n1 > 0:
-        pos += 1
-    elif n1 == 0:
-        null += 1
-    elif n1 < 0:
-        n1 += 1
+#for i in range(n):
+#    n1 = int(input("Sisestage number: "))
+#    if n1 > 0:
+#        pos += 1
+#    elif n1 == 0:
+#        null += 1
+#    elif n1 < 0:
+#        neg += 1
 
-print(f'{pos} - positiivsete arvude arv ')
-print( )
-print(f'{neg} - negatiivsete arvude arv')
-print()
-print(f'{null} - nullide arv')
-0
+#print(f'{pos} - positiivsete arvude arv ')
+#print( )
+#print(f'{neg} - negatiivsete arvude arv')
+#print()
+#print(f'{null} - nullide arv')
+
+
+##7.    Вывести на экран числа, кратные К из промежутка [А,В].
+
+k = float(input("Sisestage jagaja"))
+print("Sisestage intervall A-st B-ni.")
+a = int(input("A: "))
+b = int(input("B: "))
+count = 0
+
+for i in range(a, b+1):
+    if i % k == 0:
+        print(i)
+        count += 1
