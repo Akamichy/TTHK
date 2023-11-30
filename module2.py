@@ -55,13 +55,22 @@
 
 ##7.    Вывести на экран числа, кратные К из промежутка [А,В].
 
-k = float(input("Sisestage jagaja"))
-print("Sisestage intervall A-st B-ni.")
-a = int(input("A: "))
-b = int(input("B: "))
-count = 0
+#k = float(input("Sisestage jagaja"))
+#print("Sisestage intervall A-st B-ni.")
+#a = int(input("A: "))
+#b = int(input("B: "))
+#count = 0
 
-for i in range(a, b+1):
-    if i % k == 0:
-        print(i)
-        count += 1
+#for i in range(a, b+1):
+#    if i % k == 0:
+#        print(i)
+#        count += 1
+#print(f'{count} numbrit.')
+
+
+
+
+## 8.    Составьте программу, которая печатает таблицу перевода расстояний из дюймов в сантиметры (1 дюйм =
+## 2,5 см) для значений длин от 1 до 20 дюймов.
+
+
