@@ -232,3 +232,5 @@ import math
 
 print(10%7)
 print(14%7)
+
+def(asd) 
