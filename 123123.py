@@ -26,3 +26,4 @@ S = math.pi*(r**2)
 print("Ringi pindala", round(S,2))
 C= math.pi * r * 2
 print("Ringjoone pikkus", round(C, 2))
+

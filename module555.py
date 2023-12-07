@@ -34,9 +34,9 @@ while dif not in ["1", "2", "3"]:
     if dif == "ВЫХОД":
         sys.exit()
 qs = str(input("Сколько примеров ты хочешь решить?: "))
+
 if qs == 'ВЫХОД':
     sys.exit()
-
 qs = int(qs)
 dif = int(dif)
 
@@ -47,7 +47,7 @@ for i in range(int(qs)):
     num1 = randint(1, dif * 10)
     num2 = randint(1, dif * 10)
     num3 = randint(1, dif*10)
-    num4 = randint(1, 4)
+    num4 = randint(2, 5)
     if op == "+":
         correct = num1 + num2
         print(f'{num1} {op} {num2}')
@@ -92,3 +92,4 @@ else:
     print("Оценка: 5")
 
 
+            
