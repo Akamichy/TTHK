@@ -78,25 +78,25 @@ opilased = ['Martin', 'Eva', 'Nikolas', 'Mario', 'Mario', 'Eva']
 #        print("Пожалуйста, введите 1 либо 2")
        
 
-nlist =  []
-for i in range(len(opilased)):
-    if opilased[i] not in nlist:
-        nlist.append(opilased[i])
-    else:
-        pass
-print(nlist)
-age = [18, 40, 41, 20, 19, 36, 59, 3, 10, 12]
-count22 = 0
-print(max(age))
-print(min(age))
-leng1 = len(age)
-for i in range(leng1):
-    count22 += age[i]
-apr = count22/leng1
-print(apr)
+#nlist =  []
+#for i in range(len(opilased)):
+#    if opilased[i] not in nlist:
+#        nlist.append(opilased[i])
+#    else:
+#        pass
+#print(nlist)
+#age = [18, 40, 41, 20, 19, 36, 59, 3, 10, 12]
+#count22 = 0
+#print(max(age))
+#print(min(age))
+#leng1 = len(age)
+#for i in range(leng1):
+#    count22 += age[i]
+#apr = count22/leng1
+#print(apr)
 
-for i in range(leng1):
-    print(age[i]*'*')
+#for i in range(leng1):
+#    print(age[i]*'*')
 
 
 #В Эстонии почтовые индексы состоят из 5 чисел, где первое число обозначает уезд:
@@ -193,3 +193,84 @@ for i in range(leng1):
 #7: Sorteerimine
 #Требуется создать программу, которая сортирует список чисел по убыванию/возрастанию их абсолютного значения.
 
+#nums = input("Ввод: ")
+#nums = list(nums)
+#nums.sort()
+#print(nums)
+#nums.reverse()
+#print(nums)
+
+#8: Võrdsepikkusega elemendid
+#На входе имеем список строк разной длины.
+
+a = ['крот', 'белка', 'выхухоль']
+b = ['a', 'aa', 'aaa', 'aaaa', 'aaaaa']
+c = ['qweasdqweas', 'q', 'rteww', 'ewqqqqq']
+list1 = []
+list2 = []
+list3 = []
+a1 = 0
+b1 = 0
+c1 = 0
+#Необходимо написать программу, которая вернет новый список из строк одинаковой длины. Длину итоговой строки определяем исходя из самой большой из них. Если конкретная строка короче самой длинной, дополнить ее нижними подчеркиваниями с правого края до требуемого количества символов. Расположение элементов начального списка не менять.
+
+#['крот____', 'белка___', 'выхухоль']
+#['a____', 'aa___', 'aaa__', 'aaaa_', 'aaaaa']
+#['qweasdqweas', 'q__________', 'rteww______', 'ewqqqqq____']
+
+for i in range(len(a)):
+    list1.append(len(a[i]))
+max1 = max(list1)
+for i in range(len(a)):
+    a[i] = a[i].ljust(max1, '_')
+
+
+for i in range(len(b)):
+    list2.append(len(b[b1]))
+    b1 += 1
+max2 = max(list2)
+for i in range(len(b)):
+    b[i] = b[i].ljust(max2, '_')
+
+
+for i in range(len(c)):
+    list3.append(len(c[c1]))
+    c1 += 1
+max3 = max(list3)
+for i in range(len(c)):
+    c[i] = c[i].ljust(max3, '_')
+
+print(a)
+print(b)
+print(c)
+
+#9: Nimi kontroll
+#Надо спросить имя человека. Проверь чтобы в имени были только буквы.
+#Отобрази приветствие, используя имя с большой буквы.
+#Посчитай сколько букв в имени. Найти количество гласных и согласных букв с слове.
+#Выведи на экран буквы имени в алфавитном порядке.(если буква встречается несколько раз, то повторять ее не надо)
+name = input("Введите ваше имя: ")
+while name.isalpha() != True:
+    name = input("Введите ваше имя: ")
+name.capitalize()
+print(f'Здравствуйте, {name}! ')
+count = 0
+count1 = 0
+print(len(name))
+ss = "euioay"
+list33 = ""
+for i in range(len(name)):
+    if name[i] == " ":
+        continue
+    elif name[i] in ss:
+        count += 1
+    else:
+        count1 += 1
+for i in range(len(name)):
+    if name[i] in list33:
+        continue
+    else:
+        list33 += name[i]
+list33.sort()
+print(f'В имени {count} гласных и {count1} согласных.')
+print(list33)
