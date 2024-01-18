@@ -274,3 +274,6 @@
 #list33.sort()
 #print(f'В имени {count} гласных и {count1} согласных.')
 #print(list33)
+def summa(a,b):
+    pass
+print(summa(4,2))

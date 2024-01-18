@@ -3,3 +3,4 @@ Auto
 Valu
 Jumal
 Tarkvara
+Sõnastik
