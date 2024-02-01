@@ -8,3 +8,11 @@
         p.append(palk)
 
     return i, p
+
+def venesona():
+    newrus = input("Верное написание слова: ")
+    return newrus
+
+def eestisona():
+    newest = input("Sona ilma vigadeta: ")
+    return newest

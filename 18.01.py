@@ -5,7 +5,7 @@
 #        jarjend.append(rida.strip())
 #    f.close()
 #    return jarjend
-
+from funktsioonid import *
 def Kirjuta_failisse(fail:str, jarjend:list):
     f = open(fail, 'w', encoding = "utf-8-sig")
     for item in jarjend:
@@ -31,7 +31,7 @@ def file_read(fail:str) -> list:
 
 reading = file_read("rus.txt")
 reading2 = file_read("est.txt")
-print(reading, reading2)
+#print(reading, reading2)
 
 #while True:
 def spisok():
@@ -58,6 +58,31 @@ if choice == "1":
     Kirjuta_failisse("rus.txt", reading)
     Kirjuta_failisse("est.txt", reading2)
 spisok()
+
+if choice == "2":
+    ch = int(input("Пожалуйста, введите порядковый номер слова, которое хотите удалить: "))
+    if ch == 0:
+        exit()
+    else:
+        reading.pop(ch-1)
+        reading2.pop(ch-1)
+        spisok()
+
+elif choice == "3":
+    ch1 = int(input("Пожалуйста, введите порядковый номер слова, которое хотите исправить: "))
+    if ch1 == 0:
+        exit()
+    else:
+        venesona()
+        eestisona()
+        reading[ch1-1] = newrus
+        reading2[ch1-1] = newest
+        Kirjuta_failisse("rus.txt", reading)
+        Kirjuta_failisse("est.txt", reading2)
+        spisok()
+
+elif choice == "4":
+    exit()
 
 #with open('Nimed.txt', 'r') as f:
 #    print(f.read())
