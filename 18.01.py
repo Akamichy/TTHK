@@ -5,6 +5,7 @@
 #        jarjend.append(rida.strip())
 #    f.close()
 #    return jarjend
+from random import * 
 from funktsioonid import *
 def Kirjuta_failisse(fail:str, jarjend:list):
     f = open(fail, 'w', encoding = "utf-8-sig")
@@ -73,16 +74,40 @@ elif choice == "3":
     if ch1 == 0:
         exit()
     else:
-        venesona()
-        eestisona()
+        #venesona()
+        #eestisona()
+        newrus = input("Верное написание слова: ")
+        newest = input("Uus sõna ilma vigadeta: ")
         reading[ch1-1] = newrus
         reading2[ch1-1] = newest
         Kirjuta_failisse("rus.txt", reading)
         Kirjuta_failisse("est.txt", reading2)
         spisok()
 
+
+
 elif choice == "4":
-    exit()
+    score = 0
+    for i in range(50):
+        print( )
+    for _ in range(len(reading)):
+        randd = randint(1, len(reading))
+        word = reading[randd-1]
+        word2 = reading2[randd-1]
+        ind1 = reading.index(word)
+        ind2 = reading2.index(word2)
+        ans = input(f'Как переводится слово {word2}?: ').capitalize()
+        if ans == word:
+            if ind1 == ind2:
+                score += 1
+        else:
+            print(f'Неверно! Правильный ответ: reading2[ind2]!')
+
+    howm = score/len(reading)
+    print(f'Вы набрали {(howm)*100}%')
+
+        
+    
 
 #with open('Nimed.txt', 'r') as f:
 #    print(f.read())
